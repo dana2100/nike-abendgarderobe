@@ -3,26 +3,212 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nike Abendgarderobe – Gala</title>
-  <style>
-    body {
-      margin: 0;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      background: #000;
-      color: #fff;
-      font-family: 'Helvetica Neue', Arial, sans-serif;
-      text-align: center;
-      padding: 24px;
-    }
-    a { color: #fff; margin-top: 24px; }
-  </style>
+  <title>Nike Abendgarderobe – Für deinen großen Moment</title>
+  <meta name="description" content="Nike Abendgarderobe für Abschlussball, Hochzeit und Gala. Kleider, die sich jeder Bewegung anpassen.">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <h1>Gala – folgt in Kürze</h1>
-  <a href="../index.html">&larr; Zurück zur Übersicht</a>
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="../index.html" class="logo" aria-label="Zur Startseite">
+        <svg class="swoosh" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M1.2 16.6c1.9 1.1 3.9 1.9 6.1 1.9 1.4 0 2.7-.3 3.9-.9 1.6-.8 21-12.4 21-12.4-.3 1.1-15 17-16.5 17.9-1.1.7-2.4 1-3.7 1-3.7 0-7.5-2.3-10.8-7.5z"/>
+        </svg>
+      </a>
+
+      <nav class="main-nav" id="main-nav" aria-label="Hauptnavigation">
+        <a href="#" class="nav-link is-active">Abschlussball</a>
+        <a href="#" class="nav-link">Hochzeit</a>
+        <a href="#" class="nav-link">Gala</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-btn menu-toggle" id="menu-toggle" aria-label="Menü öffnen" aria-expanded="false" aria-controls="mobile-nav">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile-Nav (nur sichtbar < 900px, ersetzt die feste Nav) -->
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile Navigation">
+      <a href="#" class="mobile-nav-link is-active">Abschlussball</a>
+      <a href="#" class="mobile-nav-link">Hochzeit</a>
+      <a href="#" class="mobile-nav-link">Gala</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero">
+      <div class="hero-text">
+        <p class="eyebrow">Nike Abendgarderobe</p>
+        <h1>Für deinen<br>großen Moment</h1>
+        <p class="hero-copy">Ein Abend voller Tanz und Party – Dein Kleid passt sich jeder Bewegung an und hält dich aufrecht.</p>
+        <a href="#kollektion" class="btn btn-light">Jetzt entdecken</a>
+      </div>
+      <div class="hero-image">
+        <img src="assets/images/GalaStart.png" alt="Eine Frau unter einem Kronleuchter">
+      </div>
+    </section>
+
+    <!-- ===================== LIFESTYLE SPLIT 1 ===================== -->
+    <section class="split">
+      <div class="split-image">
+        <img src="assets/images/Kleid4rot.png" alt="Frau in roten Abendkleid">
+      </div>
+      <div class="split-text split-text--dark">
+        <h2>Ein Kleid für unvergessliche Erinnerungen.</h2>
+        <p>Entwickelt für lange Nächte, große Emotionen und maximale Bewegungsfreiheit.</p>
+      </div>
+    </section>
+
+    <!-- ===================== LIFESTYLE SPLIT 2 ===================== -->
+    <section class="split">
+      <div class="split-text split-text--dark">
+        <h2>Klassische Ballkleider sehen beeindruckend aus.</h2>
+        <p>Diese Kleider fühlen sich auch so an. Atmungsaktive Materialien, integrierter Support und versteckte Funktionen sorgen dafür, dass du deinen Abend genießen kannst, statt ständig dein Outfit zu korrigieren.</p>
+      </div>
+      <div class="split-image">
+        <img src="assets/images/Kleid5blau.png" alt="Asiatin in hellblauem Kleid">
+      </div>
+    </section>
+
+    <!-- ===================== SONDERAUSSTATTUNG ===================== -->
+    <section class="feature-grid">
+      <h2 class="section-title">Features, die den Unterschied machen.</h2>
+      <div class="grid-4">
+        <figure class="feature-item">
+          <img src="assets/images/Feature1Träger.png" alt="Einstellbare Träger, Nahaufnahme">
+          <figcaption>einstellbare Träger für jede Körpergröße</figcaption>
+        </figure>
+        <figure class="feature-item">
+          <img src="assets/images/Feature2Taschen.png" alt="Versteckte Tasche im Kleid, Nahaufnahme">
+          <figcaption>versteckte Taschen für alle Essentials</figcaption>
+        </figure>
+        <figure class="feature-item">
+          <img src="assets/images/Feature3Hose.png" alt="Integrierte Shorts im Kleid, Nahaufnahme der Tasche">
+          <figcaption>integrierte Shorts für komplette Bewegungsfreiheit</figcaption>
+        </figure>
+        <figure class="feature-item">
+          <img src="assets/images/Feature4BHblau.png" alt="Integrierter BH in Orange, Nahaufnahme">
+          <figcaption>integrierter BH für anhaltende Stabilität</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ===================== MATERIALIEN ===================== -->
+    <section class="feature-grid">
+      <h2 class="section-title">Materialien, die sich mit dir bewegen.</h2>
+      <div class="grid-4">
+        <figure class="feature-item">
+          <img src="assets/images/Material-Kleid.png" alt="Kleid in Bestandteilen, Nahaufnahme">
+          <figcaption><strong>Materialien</strong><br>weiß nicht</figcaption>
+        </figure>
+        <figure class="feature-item">
+          <img src="assets/images/MaterialModal.png" alt="Modal-Stoff, Nahaufnahme">
+          <figcaption><strong>Modal</strong><br>für Eleganz und ein angenehmes Tragegefühl</figcaption>
+        </figure>
+        <figure class="feature-item">
+          <img src="assets/images/MaterialPolyestherElasthan.png" alt="Polyester und Elasthan mit Nike Swoosh, Nahaufnahme">
+          <figcaption><strong>Polyester</strong><br>und Elasthan für Atmungsaktivität</figcaption>
+        </figure>
+        <figure class="feature-item">
+          <img src="assets/images/MaterialViskoseChiffon.png" alt="Viskose-/Chiffon-Stoff, Nahaufnahme">
+          <figcaption><strong>Viskose</strong><br>und Chiffon für Leichtigkeit und Bewegung</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ===================== KUNDENSTIMMEN ===================== -->
+    <section class="testimonials">
+      <div class="testimonials-text">
+        <h2>Kundenstimmen</h2>
+        <blockquote>
+          <p>„Ich wollte an meinem Abiball vor allem ein Kleid, das mir nicht nur gut aussieht, sondern in dem ich mich den ganzen Abend frei und sicher fühlen kann. Dieses Kleid hat meine Erwartungen übertroffen.“</p>
+          <cite>– Lena</cite>
+        </blockquote>
+        <blockquote>
+          <p>„Die versteckten Details machen den Unterschied. Ich kann tanzen, mich bewegen und trotzdem fühlt sich alles an seinem Platz an. Unglaublich bequem und dabei so elegant.“</p>
+          <cite>– Marie</cite>
+        </blockquote>
+      </div>
+      <div class="testimonials-image">
+        <img src="assets/images/Kleid7schwarz.png" alt="Frau im schwarzen Abendkleid">
+      </div>
+    </section>
+
+    <!-- ===================== KOLLEKTION ===================== -->
+    <section class="collection" id="kollektion">
+      <h2 class="section-title">Finde dein Kleid für einen Abend, den du nie vergisst.</h2>
+      <div class="grid-4 collection-grid">
+        <a href="#" class="product-card">
+          <img src="assets/images/Kleid1weiß.png" alt="Weißes langes Abendkleid">
+        </a>
+        <a href="#" class="product-card">
+          <img src="assets/images/Kleid5rot.png" alt="Rotes Abendkleid">
+        </a>
+        <a href="#" class="product-card">
+          <img src="assets/images/Kleid7blau.png" alt="Blaues Abendkleid"></a>
+        <a href="#" class="product-card">
+          <img src="assets/images/Kleid3schwarz.png" alt="Schwarz-goldenes Abendkleid">
+        </a>
+      </div>
+      <div class="collection-cta">
+        <a href="#" class="btn btn-light">Jetzt entdecken</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="footer-accordion">
+      <details class="footer-group">
+        <summary>Hilfe</summary>
+        <ul>
+          <li><a href="#">Versand &amp; Lieferung</a></li>
+          <li><a href="#">Rückgabe</a></li>
+          <li><a href="#">Größentabelle</a></li>
+          <li><a href="#">Kontakt</a></li>
+        </ul>
+      </details>
+      <details class="footer-group">
+        <summary>Unternehmen</summary>
+        <ul>
+          <li><a href="#">Über uns</a></li>
+          <li><a href="#">Karriere</a></li>
+          <li><a href="#">Presse</a></li>
+        </ul>
+      </details>
+      <details class="footer-group">
+        <summary>Community Discounts</summary>
+        <ul>
+          <li><a href="#">Studierende</a></li>
+          <li><a href="#">Mitarbeitende</a></li>
+        </ul>
+      </details>
+      <div class="footer-locale">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><line x1="3" y1="12" x2="21" y2="12"/><path d="M12 3a14 14 0 0 1 0 18 14 14 0 0 1 0-18z"/></svg>
+        <span>Deutschland</span>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 Nike, Inc. Alle Rechte vorbehalten</p>
+      <ul class="footer-legal">
+        <li><a href="#">Guides</a></li>
+        <li><a href="#">Nutzungsbedingungen</a></li>
+        <li><a href="#">Verkaufsbedingungen</a></li>
+        <li><a href="#">Impressum</a></li>
+        <li><a href="#">Datenschutz- und Cookie-Richtlinie</a></li>
+        <li><a href="#">Datenschutz- und Cookie-Einstellungen</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
