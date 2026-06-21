@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nike Abendgarderobe – Übersicht</title>
+  <style>
+    :root {
+      --color-bg: #000000;
+      --color-text: #ffffff;
+      --color-text-dim: #b3b3b3;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      background: var(--color-bg);
+      color: var(--color-text);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 40px 24px;
+    }
+    h1 {
+      font-size: clamp(1.8rem, 6vw, 2.6rem);
+      margin-bottom: 12px;
+    }
+    p.intro {
+      color: var(--color-text-dim);
+      max-width: 40ch;
+      margin-bottom: 40px;
+    }
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      width: 100%;
+      max-width: 320px;
+    }
+    .links a {
+      display: block;
+      padding: 16px 24px;
+      border: 1px solid #2b2b2b;
+      border-radius: 999px;
+      color: var(--color-text);
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.2s ease;
+    }
+    .links a:hover {
+      background: #161616;
+    }
+    .note {
+      margin-top: 48px;
+      font-size: 12px;
+      color: #555555;
+    }
+  </style>
+</head>
+<body>
+  <h1>Nike Abendgarderobe</h1>
+  <p class="intro">Platzhalter-Übersichtsseite. Wird durch das finale Hub-Design ersetzt, sobald alle drei Produktseiten stehen.</p>
+
+  <nav class="links">
+    <a href="abschlussball/index.html">Abschlussball</a>
+    <a href="hochzeit/index.html">Hochzeit</a>
+    <a href="gala/index.html">Gala</a>
+  </nav>
+
+  <p class="note">Uni-Projekt — vorläufige Navigationsseite</p>
+</body>
+</html>
