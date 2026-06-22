@@ -185,7 +185,7 @@ button { font: inherit; background: none; border: none; color: inherit; cursor: 
 }
 
 .split-image img {
-  width: 100%;
+  width: 80%;
   height: 420px;
   object-fit: cover;
 }
@@ -288,7 +288,7 @@ blockquote cite {
 }
 
 .testimonials-image img {
-  width: 100%;
+  width: 80%;
   height: 460px;
   object-fit: cover;
 }
