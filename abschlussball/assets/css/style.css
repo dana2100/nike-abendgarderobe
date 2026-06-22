@@ -70,7 +70,7 @@ button { font: inherit; background: none; border: none; color: inherit; cursor: 
 
 .logo { justify-self: start; display: inline-flex; }
 .swoosh {
-  width: 60px;
+  width: 80px;
   height: auto;
 }
 

@@ -3,26 +3,215 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nike Abendgarderobe – Hochzeit</title>
-  <style>
-    body {
-      margin: 0;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      background: #000;
-      color: #fff;
-      font-family: 'Helvetica Neue', Arial, sans-serif;
-      text-align: center;
-      padding: 24px;
-    }
-    a { color: #fff; margin-top: 24px; }
-  </style>
+  <title>Nike Abendgarderobe – Für deinen großen Moment</title>
+  <meta name="description" content="Nike Abendgarderobe für Abschlussball, Hochzeit und Gala. Kleider, die sich jeder Bewegung anpassen.">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <h1>Hochzeit – folgt in Kürze</h1>
-  <a href="../index.html">&larr; Zurück zur Übersicht</a>
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="../index.html" class="logo" aria-label="Zur Startseite">
+        <img src="assets/images/002_nike-logos-swoosh-white.png" alt="Nike" class="swoosh">
+      </a>
+
+      <nav class="main-nav" id="main-nav" aria-label="Hauptnavigation">
+        <a href="../abschlussball/index.html" class="nav-link">Abschlussball</a>
+        <a href="../hochzeit/index.html" class="nav-link is-active">Hochzeit</a>
+        <a href="../gala/index.html" class="nav-link">Gala</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-btn menu-toggle" id="menu-toggle" aria-label="Menü öffnen" aria-expanded="false" aria-controls="mobile-nav">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile-Nav (nur sichtbar < 900px, ersetzt die feste Nav) -->
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile Navigation">
+      <a href="#" class="mobile-nav-link">Abschlussball</a>
+      <a href="#" class="mobile-nav-link is-active">Hochzeit</a>
+      <a href="#" class="mobile-nav-link">Gala</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero">
+      <div class="hero-text">
+        <p class="eyebrow">Nike Abendgarderobe</p>
+        <h1>Für deinen<br>großen Moment</h1>
+        <p class="hero-copy">Ein unvergesslicher Moment - Dein Kleid hält allen Emotionen stand.</p>
+        <a href="#kollektion" class="btn btn-light">Jetzt entdecken</a>
+      </div>
+      <div class="hero-image">
+        <img src="assets/images/hero01.png" alt="Zwei Bräute mit Blumensträußen">
+      </div>
+    </section>
+
+    <!-- ===================== LIFESTYLE SPLIT 1 ===================== -->
+    <section class="split">
+      <div class="split-image">
+        <img src="assets/images/Brautjungfernkleid04salbei.png" alt="Frau im grünen Brautjungfernkleid">
+      </div>
+      <div class="split-text split-text--dark">
+        <h2>Ein Kleid für einzigartige Stunden.</h2>
+        <p>Entwickelt für emotionale Augenblicke, viele Fotos und unvergessliche Momente.</p>
+      </div>
+    </section>
+
+    <!-- ===================== LIFESTYLE SPLIT 2 ===================== -->
+    <section class="split">
+      <div class="split-text split-text--dark">
+        <h2>Hochzeitskleider sind für lange Tage voller Emotionen gemacht.</h2>
+        <p>Diese Kleider verbinden hochwertige Optik mit außergewöhnlichem Komfort. Für einen Tag, an dem du dich ganz auf deinen Moment konzentrieren kannst.</p>
+      </div>
+      <div class="split-image">
+        <img src="assets/images/Hochzeitskleid05.png" alt="Frau in engen Hochzeitskleid">
+      </div>
+    </section>
+
+    <!-- ===================== SONDERAUSSTATTUNG ===================== -->
+    <section class="feature-grid">
+      <h2 class="section-title">Features, die den Unterschied machen.</h2>
+      <div class="grid-4">
+        <figure class="feature-item">
+          <img src="assets/images/Feature01-Träger.png" alt="Einstellbare Träger, Nahaufnahme">
+          <figcaption>einstellbare Träger für jede Körpergröße</figcaption>
+        </figure>
+        <figure class="feature-item">
+          <img src="assets/images/Feature02-Tasche.png" alt="Versteckte Tasche im Kleid, Nahaufnahme">
+          <figcaption>versteckte Taschen für alle Essentials</figcaption>
+        </figure>
+        <figure class="feature-item">
+          <img src="assets/images/Feature03-Hose.png" alt="Integrierte Shorts im Kleid, Nahaufnahme der Tasche">
+          <figcaption>integrierte Shorts für komplette Bewegungsfreiheit</figcaption>
+        </figure>
+        <figure class="feature-item">
+          <img src="assets/images/Feature04-BH.png" alt="Integrierter BH in Orange, Nahaufnahme">
+          <figcaption>integrierter BH für anhaltende Stabilität</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ===================== MATERIALIEN ===================== -->
+    <section class="feature-grid">
+  <h2 class="section-title">Materialien, die sich mit dir bewegen.</h2>
+  <div class="material-grid">
+    <figure class="material-main">
+      <img src="assets/images/material.png" alt="Kleid in Bestandteilen, Nahaufnahme">
+    </figure>
+    <div class="material-sub">
+      <figure class="feature-item">
+        <img src="assets/images/material-modal.png" alt="Modal-Stoff, Nahaufnahme">
+        <figcaption><strong>Modal</strong><br>für Eleganz und ein angenehmes Tragegefühl</figcaption>
+      </figure>
+      <figure class="feature-item">
+        <img src="assets/images/material-polyester.png" alt="Polyester und Elasthan mit Nike Swoosh, Nahaufnahme">
+        <figcaption><strong>Polyester und Elasthan</strong><br>für Atmungsaktivität und Elastizität</figcaption>
+      </figure>
+      <figure class="feature-item">
+        <img src="assets/images/material-chiffon.png" alt="Viskose-/Chiffon-Stoff, Nahaufnahme">
+        <figcaption><strong>Viskose und Chiffon</strong><br>für Leichtigkeit und Bewegungsfreiheit</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+    <!-- ===================== KUNDENSTIMMEN ===================== -->
+    <section class="testimonials">
+      <div class="testimonials-text">
+        <h2>Kundenstimmen</h2>
+        <blockquote>
+          <p>„Schon beim Anziehen wusste ich: Das wird mein Kleid für diesen besonderen Tag. Es hat meine Erwartungen sogar übertroffen.“</p>
+          <cite>– Anna</cite>
+        </blockquote>
+        <blockquote>
+          <p>„Als Hochzeitsgast wollte ich elegant aussehen, ohne ständig an mein Kleid denken zu müssen. Es saß perfekt und hat den ganzen Tag jede Bewegung mitgemacht.“</p>
+          <cite>– Kristina</cite>
+        </blockquote>
+        <blockquote>
+          <p>„Von der Trauung bis zur letzten Tanzrunde habe ich mich rundum wohlgefühlt. Das Kleid war genauso bequem, wie es auf den Fotos aussieht.“</p>
+          <cite>– Helen</cite>
+        </blockquote>
+      </div>
+      <div class="testimonials-image">
+        <img src="assets/images/Hochzeitskleid07.png" alt="Frau im Hochzeitskleid">
+      </div>
+    </section>
+
+    <!-- ===================== KOLLEKTION ===================== -->
+    <section class="collection" id="kollektion">
+      <h2 class="section-title">Finde dein Kleid für einen Abend, den du nie vergisst.</h2>
+      <div class="grid-4 collection-grid">
+        <a href="#" class="product-card">
+          <img src="assets/images/Hochzeitskleid04.png" alt="Frau im Hochzeitskleid">
+        </a>
+        <a href="#" class="product-card">
+          <img src="assets/images/Brautjungfernkleid05türkis.png" alt="Frau im türkisen Brautjungfernkleid">
+        </a>
+        <a href="#" class="product-card">
+          <img src="assets/images/Hochzeitskleid06.png" alt="Frau im Hochzeitskleid von hinten"></a>
+        <a href="#" class="product-card">
+          <img src="assets/images/Brautjungfernkleid03rosa.png" alt="Frau im rosa Brautjungfernkleid">
+        </a>
+      </div>
+      <div class="collection-cta">
+        <a href="#" class="btn btn-light">Jetzt entdecken</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="footer-accordion">
+      <details class="footer-group">
+        <summary>Hilfe</summary>
+        <ul>
+          <li><a href="#">Versand &amp; Lieferung</a></li>
+          <li><a href="#">Rückgabe</a></li>
+          <li><a href="#">Größentabelle</a></li>
+          <li><a href="#">Kontakt</a></li>
+        </ul>
+      </details>
+      <details class="footer-group">
+        <summary>Unternehmen</summary>
+        <ul>
+          <li><a href="#">Über uns</a></li>
+          <li><a href="#">Karriere</a></li>
+          <li><a href="#">Presse</a></li>
+        </ul>
+      </details>
+      <details class="footer-group">
+        <summary>Community Discounts</summary>
+        <ul>
+          <li><a href="#">Studierende</a></li>
+          <li><a href="#">Mitarbeitende</a></li>
+        </ul>
+      </details>
+      <div class="footer-locale">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><line x1="3" y1="12" x2="21" y2="12"/><path d="M12 3a14 14 0 0 1 0 18 14 14 0 0 1 0-18z"/></svg>
+        <span>Deutschland</span>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 Nike, Inc. Alle Rechte vorbehalten</p>
+      <ul class="footer-legal">
+        <li><a href="#">Guides</a></li>
+        <li><a href="#">Nutzungsbedingungen</a></li>
+        <li><a href="#">Verkaufsbedingungen</a></li>
+        <li><a href="#">Impressum</a></li>
+        <li><a href="#">Datenschutz- und Cookie-Richtlinie</a></li>
+        <li><a href="#">Datenschutz- und Cookie-Einstellungen</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
