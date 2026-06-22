@@ -3,73 +3,119 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nike Abendgarderobe – Übersicht</title>
-  <style>
-    :root {
-      --color-bg: #000000;
-      --color-text: #ffffff;
-      --color-text-dim: #b3b3b3;
-    }
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      font-family: 'Helvetica Neue', Arial, sans-serif;
-      background: var(--color-bg);
-      color: var(--color-text);
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 40px 24px;
-    }
-    h1 {
-      font-size: clamp(1.8rem, 6vw, 2.6rem);
-      margin-bottom: 12px;
-    }
-    p.intro {
-      color: var(--color-text-dim);
-      max-width: 40ch;
-      margin-bottom: 40px;
-    }
-    .links {
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-      width: 100%;
-      max-width: 320px;
-    }
-    .links a {
-      display: block;
-      padding: 16px 24px;
-      border: 1px solid #2b2b2b;
-      border-radius: 999px;
-      color: var(--color-text);
-      text-decoration: none;
-      font-weight: 600;
-      transition: background 0.2s ease;
-    }
-    .links a:hover {
-      background: #161616;
-    }
-    .note {
-      margin-top: 48px;
-      font-size: 12px;
-      color: #555555;
-    }
-  </style>
+  <title>Nike Abendgarderobe – Für deinen großen Moment</title>
+  <meta name="description" content="Nike Abendgarderobe für Abschlussball, Hochzeit und Gala.">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <h1>Nike Abendgarderobe</h1>
-  <p class="intro">Platzhalter-Übersichtsseite. Wird durch das finale Hub-Design ersetzt, sobald alle drei Produktseiten stehen.</p>
 
-  <nav class="links">
-    <a href="abschlussball/index.html">Abschlussball</a>
-    <a href="hochzeit/index.html">Hochzeit</a>
-    <a href="gala/index.html">Gala</a>
-  </nav>
+  <!-- ===================== HEADER ===================== -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo" aria-label="Zur Startseite">
+        <img src="assets/images/002_nike-logos-swoosh-white.png" alt="Nike" class="swoosh">
+      </a>
+      <nav class="main-nav" id="main-nav" aria-label="Hauptnavigation">
+        <a href="abschlussball/index.html" class="nav-link">Abschlussball</a>
+        <a href="hochzeit/index.html" class="nav-link">Hochzeit</a>
+        <a href="gala/index.html" class="nav-link">Gala</a>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-btn menu-toggle" id="menu-toggle" aria-label="Menü öffnen" aria-expanded="false" aria-controls="mobile-nav">
+          <svg viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile Navigation">
+      <a href="abschlussball/index.html" class="mobile-nav-link">Abschlussball</a>
+      <a href="hochzeit/index.html" class="mobile-nav-link">Hochzeit</a>
+      <a href="gala/index.html" class="mobile-nav-link">Gala</a>
+    </nav>
+  </header>
 
-  <p class="note">Uni-Projekt — vorläufige Navigationsseite</p>
+  <main>
+
+    <!-- ===================== HERO ===================== -->
+  <section class="hero">
+    <video class="hero-video" autoplay muted loop playsinline>
+     <source src="assets/videos/hero-video.mp4" type="video/mp4">
+    </video>
+  </section>
+
+    <!-- ===================== KATEGORIE-KACHELN ===================== -->
+    <section class="categories">
+      <a href="abschlussball/index.html" class="category-card">
+        <img src="assets/images/AbiHero.png" alt="Abschlussball">
+        <div class="category-card-content">
+          <h2>Ein Abend voller Tanz und Party</h2>
+          <p>Dein Kleid passt sich jeder Bewegung an und hält dich aufrecht.</p>
+          <span href="#kollektion" class="btn btn-light">Jetzt entdecken</span>
+        </div>
+      </a>
+      <a href="hochzeit/index.html" class="category-card">
+        <img src="assets/images/hero01.png" alt="Hochzeit">
+        <div class="category-card-content">
+          <h2>Ein unvergesslicher Moment</h2>
+          <p>Dein Kleid hält allen Emotionen stand.</p>
+          <span href="#kollektion" class="btn btn-light">Jetzt entdecken</span>
+        </div>
+      </a>
+      <a href="gala/index.html" class="category-card">
+        <img src="assets/images/GalaStart.png" alt="Gala">
+        <div class="category-card-content">
+          <h2>Ein Event mit Glamour</h2>
+          <p>Dein Kleid gibt dir die Eleganz und das Selbstbewusstsein.</p>
+          <span href="#kollektion" class="btn btn-light">Jetzt entdecken</span>
+        </div>
+      </a>
+    </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="footer-accordion">
+      <details class="footer-group">
+        <summary>Hilfe</summary>
+        <ul>
+          <li><a href="#">Versand &amp; Lieferung</a></li>
+          <li><a href="#">Rückgabe</a></li>
+          <li><a href="#">Größentabelle</a></li>
+          <li><a href="#">Kontakt</a></li>
+        </ul>
+      </details>
+      <details class="footer-group">
+        <summary>Unternehmen</summary>
+        <ul>
+          <li><a href="#">Über uns</a></li>
+          <li><a href="#">Karriere</a></li>
+          <li><a href="#">Presse</a></li>
+        </ul>
+      </details>
+      <details class="footer-group">
+        <summary>Community Discounts</summary>
+        <ul>
+          <li><a href="#">Studierende</a></li>
+          <li><a href="#">Mitarbeitende</a></li>
+        </ul>
+      </details>
+      <div class="footer-locale">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><line x1="3" y1="12" x2="21" y2="12"/><path d="M12 3a14 14 0 0 1 0 18 14 14 0 0 1 0-18z"/></svg>
+        <span>Deutschland</span>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 Nike, Inc. Alle Rechte vorbehalten</p>
+      <ul class="footer-legal">
+        <li><a href="#">Guides</a></li>
+        <li><a href="#">Nutzungsbedingungen</a></li>
+        <li><a href="#">Verkaufsbedingungen</a></li>
+        <li><a href="#">Impressum</a></li>
+        <li><a href="#">Datenschutz- und Cookie-Richtlinie</a></li>
+        <li><a href="#">Datenschutz- und Cookie-Einstellungen</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
