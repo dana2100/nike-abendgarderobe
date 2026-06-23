@@ -373,3 +373,50 @@ button { font: inherit; background: none; border: none; color: inherit; cursor: 
   html { scroll-behavior: auto; }
   * { transition-duration: 0.001ms !important; animation-duration: 0.001ms !important; }
 }
+
+/* ===================================================================
+   MOBILE ANPASSUNGEN
+   =================================================================== */
+
+/* 1) Burger-Menü nach rechts */
+@media (max-width: 899px) {
+  .header-inner {
+    grid-template-columns: auto 1fr auto;
+  }
+  .header-actions {
+    justify-self: end;
+  }
+}
+
+/* 2) Footer-Links untereinander auf Mobile */
+@media (max-width: 699px) {
+  .footer-legal {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+/* ===================================================================
+   DESKTOP ANPASSUNGEN
+   =================================================================== */
+
+/* Footer Desktop: Links untereinander, Pfeile weg, immer aufgeklappt */
+@media (min-width: 900px) {
+  .footer-group summary {
+    pointer-events: none;
+    cursor: default;
+  }
+  .footer-group summary::after {
+    display: none;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 0;
+    gap: 12px;
+  }
+  .footer-legal {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

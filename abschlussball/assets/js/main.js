@@ -30,4 +30,17 @@ document.addEventListener('DOMContentLoaded', () => {
       menuToggle.setAttribute('aria-expanded', 'false');
     }
   });
+
+  // Footer-Akkordeons auf Mobile einklappen
+function setFooterAccordion() {
+  const groups = document.querySelectorAll('.footer-group');
+  if (window.innerWidth < 900) {
+    groups.forEach(g => g.removeAttribute('open'));
+  } else {
+    groups.forEach(g => g.setAttribute('open', ''));
+  }
+}
+
+setFooterAccordion();
+window.addEventListener('resize', setFooterAccordion);
 });
